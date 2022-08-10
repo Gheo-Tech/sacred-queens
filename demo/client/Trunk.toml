@@ -1,0 +1,3 @@
+[[proxy]]
+rewrite = "/backend/"
+backend = "http://localhost:9000/"

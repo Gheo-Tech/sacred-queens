@@ -1,0 +1,22 @@
+[package]
+edition = "2021"
+name = "sycamore-metamask-example"
+version = "0.1.0"
+
+[dependencies]
+console_error_panic_hook = "0.1"
+console_log = "0.2"
+sycamore = { version = "0.8.0-beta.5", features = ["suspense"] }
+wasm-bindgen = { version = "0.2", features = ["serde-serialize"] }
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3"
+log = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+web3 = { version = "0.18.0", default-features = false, features = ["http-rustls-tls", "wasm", "eip-1193"] }
+gloo-timers = { version = "0.2.4", features = ["futures"] }
+reqwasm = "0.5.0"
+
+[dependencies.web-sys]
+features = ["InputEvent", "KeyboardEvent", "Location", "Storage"]
+version = "0.3"
